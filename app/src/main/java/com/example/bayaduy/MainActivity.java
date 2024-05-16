@@ -13,7 +13,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button b1, b2;
+    Button b1, b2, b3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,6 +43,17 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent1 = new Intent(
                         MainActivity.this,
                         LogIn.class);
+                startActivity(intent1);
+            }
+        });
+
+        b3 = (Button) findViewById(R.id.btnLogInG);
+        b3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1 = new Intent(
+                        getApplicationContext(),
+                        LogInGoogle.class);
                 startActivity(intent1);
             }
         });
