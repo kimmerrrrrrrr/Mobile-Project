@@ -11,38 +11,38 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
+public class LogIn extends AppCompatActivity {
 
     Button b1, b2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_log_in);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-        b1 = (Button) findViewById(R.id.btnSignUp);
+        b1 = (Button) findViewById(R.id.btnBack2);
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent1 = new Intent(
-                        MainActivity.this,
-                        SignUp.class);
+                        LogIn.this,
+                        MainActivity.class);
                 startActivity(intent1);
             }
         });
 
-        b2 = (Button) findViewById(R.id.btnLogIn);
+        b2 = (Button) findViewById(R.id.btnLogIn2);
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent1 = new Intent(
-                        MainActivity.this,
-                        LogIn.class);
+                        LogIn.this,
+                        WelcomePage.class);
                 startActivity(intent1);
             }
         });
