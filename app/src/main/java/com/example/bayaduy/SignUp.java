@@ -14,7 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class SignUp extends AppCompatActivity {
 
-    Button b1;
+    Button b1, b2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +33,17 @@ public class SignUp extends AppCompatActivity {
                 Intent intent1 = new Intent(
                         SignUp.this,
                         MainActivity.class);
+                startActivity(intent1);
+            }
+        });
+
+        b2 = (Button) findViewById(R.id.btnDone);
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1 = new Intent(
+                        SignUp.this,
+                        WelcomePage.class);
                 startActivity(intent1);
             }
         });
