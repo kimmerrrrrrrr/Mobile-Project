@@ -20,16 +20,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="298dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/welcome" />
-
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="411dp"
@@ -42,20 +32,21 @@
 
         <TextView
             android:id="@+id/textView5"
-            android:layout_width="wrap_content"
+            android:layout_width="35dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="15sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
             android:layout_weight="1"
-            android:text="Email"
+            android:text="Username"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textColor="@color/blue" />
 
         <EditText
-            android:id="@+id/eMail"
+            android:id="@+id/uName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="18dp"
-            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="15dp"
             android:layout_weight="1"
             android:ems="10"
             android:inputType="text"
@@ -75,7 +66,8 @@
             android:id="@+id/textView6"
             android:layout_width="36dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="15sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
             android:layout_weight="1"
             android:text="Password"
             android:textColor="@color/blue" />
@@ -84,11 +76,12 @@
             android:id="@+id/Pass"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="18dp"
-            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="15dp"
             android:layout_weight="1"
             android:ems="10"
             android:inputType="textPassword"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textSize="15sp" />
     </LinearLayout>
 
@@ -104,17 +97,43 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnForgot"
+        android:id="@+id/btnReg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="316dp"
         android:backgroundTint="@color/white"
-        android:text="Forgot you password?"
+        android:text="Register"
         android:textColor="@color/blue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:textSize="17dp"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="79dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bayaduy" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/poppins"
+        android:text="Bayad Uy!!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/blue"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

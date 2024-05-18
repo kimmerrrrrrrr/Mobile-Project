@@ -4,26 +4,25 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class LogIn extends AppCompatActivity {
 
-    Button b1, b2;
+    Button b1, b2, b3;
+    EditText uName, Pass;
+    DatabaseHelper databaseHelper;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_log_in);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+
+        databaseHelper = new DatabaseHelper(this);
+
+        uName = findViewById(R.id.uName);
+        Pass = findViewById(R.id.Pass);
 
         b1 = (Button) findViewById(R.id.btnBack2);
         b1.setOnClickListener(new View.OnClickListener() {
@@ -40,9 +39,30 @@ public class LogIn extends AppCompatActivity {
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String username = uName.getText().toString();
+                String password = Pass.getText().toString();
+
+                Boolean checkLogin = databaseHelper.CheckLogin(username, password);
+                if(checkLogin) {
+                    Toast.makeText(getApplicationContext(), "Log In Successful", Toast.LENGTH_SHORT).show();
+                    Intent intent1 = new Intent(
+                            LogIn.this,
+                            WelcomePage.class);
+                    startActivity(intent1);
+                }
+                else{
+                    Toast.makeText(getApplicationContext(), "Invalid username or password", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
+        b3 = (Button) findViewById(R.id.btnReg);
+        b3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 Intent intent1 = new Intent(
                         LogIn.this,
-                        WelcomePage.class);
+                        SignUp.class);
                 startActivity(intent1);
             }
         });

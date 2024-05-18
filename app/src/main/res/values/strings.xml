@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">BayadUy</string>
+    <string name="app_name">Bayad Uy!!</string>
+    <string name="screen1">Bayad Uy!! keeps track of balances
+                            between friends.</string>
+    <string name="screenStart">Let\'s get started!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

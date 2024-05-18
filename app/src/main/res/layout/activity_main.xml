@@ -40,7 +40,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="740dp"
         android:backgroundTint="#C1EBF8"
-        android:text="Log In with Google"
+        android:text="Sign In with Google"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
@@ -59,14 +59,19 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/bayaduy" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="343dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="360dp"
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="356dp"
+        android:fontFamily="@font/poppins"
+        android:text="Bayad Uy!!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/blue"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/bayadicon" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

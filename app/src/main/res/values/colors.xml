@@ -3,4 +3,13 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="blue">#2196F3</color>
+    <color name="true_blue">#0065E1</color>
+    <color name="azure">#0083EE</color>
+    <color name="cerulean">#00A0F6</color>
+    <color name="magnolia">#F7F4FF</color>
+    <color name="water">#D6EAFB</color>
+    <color name="ming">#3D7582</color>
+    <color name="blue_jeans">#67BBDB</color>
+    <color name="cornflower">#8ECEDE</color>
+
 </resources>

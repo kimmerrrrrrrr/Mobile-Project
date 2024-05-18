@@ -27,7 +27,7 @@ public class LogInGoogle extends Activity {
         WindowManager.LayoutParams params = getWindow().getAttributes();
         params.gravity = Gravity.CENTER;
         params.x = 0;
-        params.y = -20;
+        params.y = -40;
 
         getWindow().setAttributes(params);
 
