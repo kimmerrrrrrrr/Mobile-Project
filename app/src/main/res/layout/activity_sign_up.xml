@@ -64,7 +64,7 @@
         android:layout_marginTop="390dp"
         android:backgroundTint="#C1EBF8"
         android:text="Back"
-        android:textColor="@color/black"
+        android:textColor="@color/true_blue"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

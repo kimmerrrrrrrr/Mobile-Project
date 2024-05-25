@@ -19,7 +19,6 @@ public class SignUp extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
-        // Initialize DatabaseHelper and UI components
         databaseHelper = new DatabaseHelper(this);
         uName = findViewById(R.id.uName);
         eMail = findViewById(R.id.email);
@@ -27,11 +26,11 @@ public class SignUp extends AppCompatActivity {
         cPass = findViewById(R.id.cPassword);
 
 
-
-        // Set onClick listener for login button
         b1 = findViewById(R.id.btnBack2);
         b1.setOnClickListener(v -> {
-            Intent intent = new Intent(SignUp.this, LogIn.class);
+            Intent intent = new Intent(
+                    SignUp.this,
+                    MainActivity.class);
             startActivity(intent);
         });
 
@@ -42,7 +41,6 @@ public class SignUp extends AppCompatActivity {
             String password = pass.getText().toString();
             String confirm_password = cPass.getText().toString();
 
-            // Validate input fields
             if (username.isEmpty() || email.isEmpty() || password.isEmpty() || confirm_password.isEmpty()) {
                 Toast.makeText(getApplicationContext(), "Fields Required", Toast.LENGTH_SHORT).show();
             } else {
@@ -57,7 +55,6 @@ public class SignUp extends AppCompatActivity {
                             pass.setText("");
                             cPass.setText("");
 
-                            // Navigate to login page
                             Intent intent = new Intent(SignUp.this, LogIn.class);
                             startActivity(intent);
                         } else {

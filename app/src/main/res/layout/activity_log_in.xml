@@ -12,11 +12,11 @@
         android:id="@+id/btnBack2"
         android:layout_width="140dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="52dp"
         android:layout_marginTop="268dp"
         android:backgroundTint="#C1EBF8"
         android:text="Back"
-        android:textColor="@color/black"
+        android:textColor="@color/true_blue"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -104,11 +104,11 @@
         android:backgroundTint="@color/white"
         android:text="Register"
         android:textColor="@color/blue"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textSize="17dp"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -133,6 +133,20 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnExisting"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="740dp"
+        android:backgroundTint="#C1EBF8"
+        android:text="Log In using existing Account"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/true_blue"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

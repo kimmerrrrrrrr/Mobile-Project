@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class LogIn extends AppCompatActivity {
 
-    Button b1, b2, b3;
+    Button b1, b2, b3, b4;
     EditText uName, Pass;
     DatabaseHelper databaseHelper;
     @Override
@@ -63,6 +63,17 @@ public class LogIn extends AppCompatActivity {
                 Intent intent1 = new Intent(
                         LogIn.this,
                         SignUp.class);
+                startActivity(intent1);
+            }
+        });
+
+        b4 = (Button) findViewById(R.id.btnExisting);
+        b4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1 = new Intent(
+                        LogIn.this,
+                        LogInGoogle.class);
                 startActivity(intent1);
             }
         });

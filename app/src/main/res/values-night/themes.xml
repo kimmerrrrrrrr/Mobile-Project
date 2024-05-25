@@ -4,4 +4,14 @@
         <!-- Customize your dark theme here. -->
          <item name="colorPrimary">@color/true_blue</item>
     </style>
+
+    <style name= "ScreenBackground">
+        <item name="android:background">@color/outer_space</item>
+    </style>
+    <style name= "CardBackground">
+        <item name="android:background">@color/outer_space</item>
+    </style>
+    <style name= "TextColor">
+        <item name="android:textColor">@color/magnolia</item>
+    </style>
 </resources>

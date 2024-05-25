@@ -11,5 +11,9 @@
     <color name="ming">#3D7582</color>
     <color name="blue_jeans">#67BBDB</color>
     <color name="cornflower">#8ECEDE</color>
+    <color name="outer_space">#44455E</color>
+    <color name="gainsboro">#DBDDE9</color>
+    <color name="water_two">#D0F4FF</color>
+    <color name="fresh_air">#B1DBFF</color>
 
 </resources>

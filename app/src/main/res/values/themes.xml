@@ -6,4 +6,15 @@
     </style>
 
     <style name="Theme.BayadUy" parent="Base.Theme.BayadUy" />
+
+    <style name= "ScreenBackground">
+        <item name="android:background">@color/magnolia</item>
+    </style>
+    <style name= "CardBackground">
+        <item name="android:background">@color/magnolia</item>
+    </style>
+    <style name= "TextColor">
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
 </resources>
